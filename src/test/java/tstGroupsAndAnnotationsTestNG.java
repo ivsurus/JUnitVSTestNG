@@ -59,8 +59,9 @@ public class tstGroupsAndAnnotationsTestNG {
 
     //without priority  tests run by methodName, groups doesnt influence on priority
     //priority: when number is MIN priority is MAX, negative number - OK
+    //{"", ""} describes more then one groups
 
-    @Test(groups="method1", priority = 4)
+    @Test(groups={"method1", "method2"}, priority = 4)
     public void testingMethod() {
         System.out.println("Method - testingMethod1()");
     }

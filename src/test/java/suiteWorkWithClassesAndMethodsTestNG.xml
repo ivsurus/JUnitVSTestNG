@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="My test suite">
+    <test name="testing">
+        <classes>
+            <class name="tstCalculatorTestNG">
+            <methods>
+                <include name=".*enabledTestMethod.*"/>
+                <exclude name="tstDivExep"/>
+                <exclude name="tstSum"/>
+            </methods>
+            </class>
+
+            <class name="tstCalculatorMinusTestNG" />
+        </classes>
+    </test>
+</suite>

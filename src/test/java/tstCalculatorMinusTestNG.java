@@ -3,6 +3,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+//You can define groups at the class level
+@Test(groups = "all")
 public class tstCalculatorMinusTestNG {
 
     private Calculator calculator;

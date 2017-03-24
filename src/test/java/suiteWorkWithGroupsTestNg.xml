@@ -5,6 +5,7 @@
             <run>
                 <include name="method1"/>
                 <include name="method2"/>
+                <include name="all"/>
                 <exclude name="method4"/>
             </run>
         </groups>
@@ -12,7 +13,7 @@
         <classes>
             <!-- methods in this class will be ignored because of group attribute doesn't described -->
             <class name="tstCalculatorTestNG" />
-            <!-- methods in this class will be ignored because of group attribute doesn't described -->
+            <!-- methods in this class will be started -->
             <class name="tstCalculatorMinusTestNG" />
             <!-- methods in this class will be started -->
             <class name="tstGroupsAndAnnotationsTestNG" />

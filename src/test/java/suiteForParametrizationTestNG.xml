@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="My test suite for parametrization">
+    <test name="testing">
+<!--If you are using simple values for your parameters, you can specify them in your suite.xml-->
+<!--You cant describe here another parameter 'number', only last value will be provided-->
+        <parameter name="number" value="2"/>
+        <!--200 will will be provided-->
+        <parameter name="number" value="200"/>
+        <classes>
+            <class name="tstParametrizationTestNG" />
+        </classes>
+    </test>
+
+
+</suite>
