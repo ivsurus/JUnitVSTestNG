@@ -20,14 +20,14 @@ public class tstCalculatorJUnit {
             System.out.println("I am AfterClass");
         }
 
-        //run before each test method
+        //run before each test METHOD
         @Before
         public void createCalc(){
             calculator = new Calculator();
             System.out.println("I am BeforeMethod");
         }
 
-        //run after each test method
+        //run after each test METHOD
         @After
         public void destroyCalc(){
             calculator = null;

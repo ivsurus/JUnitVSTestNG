@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="My test suite">
+    <test name="testing">
+        <groups>
+            <run>
+                <include name="method1"/>
+                <include name="method2"/>
+                <exclude name="method4"/>
+            </run>
+        </groups>
+
+        <classes>
+            <!-- methods in this class will be ignored because of group attribute doesn't described -->
+            <class name="tstCalculatorTestNG" />
+            <!-- methods in this class will be ignored because of group attribute doesn't described -->
+            <class name="tstCalculatorMinusTestNG" />
+            <!-- methods in this class will be started -->
+            <class name="tstGroupsAndAnnotationsTestNG" />
+        </classes>
+
+    </test>
+</suite>
